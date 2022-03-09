@@ -33,7 +33,7 @@ function getUpgrade(){
 
 function getUpgrade2(){
   if (energy >= cost2) {
-    energyPc += 1
+    energyPc += 5
     energy = energy - cost2
     cost2 = Math.round(cost2 * 1.05)
     console.log("Item brought.")
