@@ -1,0 +1,9 @@
+.button{
+  border: none;
+  background-color: #fff;
+}
+.centered{
+    font-family: Tahoma;
+    text-align: center;
+    margin: 10%;
+}
