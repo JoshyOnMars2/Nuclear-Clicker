@@ -64,9 +64,11 @@ function getUpgrade3(){
 }
 
 window.setInterval(function(){
+    // this does like the energy per second thingy ya know.
+    
     energy += energyPs
     document.getElementById("counter").innerHTML = energy
     document.getElementById("eps").innerHTML = energyPs
 }, 1000);
 
-//Hi
+//Hi eeeeeeeeeee
