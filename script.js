@@ -1,15 +1,17 @@
 let energy = 0
 let energyPc = 1
 let energyPs = 0
-let cost = 25
-let cost2 = 100
+let cost = 50
+let cost2 = 200
 let cost3 = 25
+let cost4 = 100
 // if the key value pair exists, we set x equal to the stored value
 // else, set x to 0
 document.getElementById('btn').addEventListener("click", iterate)
 document.getElementById('upgradebtn').addEventListener("click", getUpgrade)
 document.getElementById('upgradebtn2').addEventListener("click", getUpgrade2)
 document.getElementById('upgradebtn3').addEventListener("click", getUpgrade3)
+document.getElementById('upgradebtn4').addEventListener("click", getUpgrade4)
 
 register()
 function register(){
@@ -19,6 +21,7 @@ function register(){
     document.getElementById("cost").innerHTML = cost
     document.getElementById("cost2").innerHTML = cost2
     document.getElementById("cost3").innerHTML = cost3
+    document.getElementById("cost4").innerHTML = cost4
 }
 
 function iterate(){
@@ -56,6 +59,18 @@ function getUpgrade3(){
     energyPs += 1
     energy = energy - cost3
     cost3 = Math.round(cost3 * 1.05)
+    console.log("Item brought.")
+    register()
+  } else {
+    console.log("No..")
+  }
+}
+
+function getUpgrade4(){
+  if (energy >= cost4) {
+    energyPs += 5
+    energy = energy - cost4
+    cost4 = Math.round(cost4 * 1.05)
     console.log("Item brought.")
     register()
   } else {
