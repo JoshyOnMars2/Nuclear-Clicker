@@ -84,6 +84,7 @@ window.setInterval(function(){
     energy += energyPs
     document.getElementById("counter").innerHTML = energy
     document.getElementById("eps").innerHTML = energyPs
+    register()
 }, 1000);
 
 //Hi eeeeeeeeeee
