@@ -7,10 +7,15 @@ let cost2 = 100
 document.getElementById('btn').addEventListener("click", iterate)
 document.getElementById('upgradebtn').addEventListener("click", getUpgrade)
 document.getElementById('upgradebtn2').addEventListener("click", getUpgrade2)
-document.getElementById("counter").innerHTML = energy
-document.getElementById("epc").innerHTML = energyPc
-document.getElementById("cost").innerHTML = cost
-document.getElementById("cost2").innerHTML = cost2
+
+register()
+function register(){
+    document.getElementById("counter").innerHTML = energy
+    document.getElementById("epc").innerHTML = energyPc
+    document.getElementById("cost").innerHTML = cost
+    document.getElementById("cost2").innerHTML = cost2
+}
+
 function iterate(){
     energy += energyPc
     console.log(energyPc,energy)
@@ -23,9 +28,7 @@ function getUpgrade(){
     energy = energy - cost
     cost = Math.round(cost * 1.05)
     console.log("Item brought.")
-    document.getElementById("counter").innerHTML = energy
-    document.getElementById("epc").innerHTML = energyPc
-    document.getElementById("cost").innerHTML = cost
+    register()
   } else {
     console.log("No..")
   }
@@ -37,9 +40,7 @@ function getUpgrade2(){
     energy = energy - cost2
     cost2 = Math.round(cost2 * 1.05)
     console.log("Item brought.")
-    document.getElementById("counter").innerHTML = energy
-    document.getElementById("epc").innerHTML = energyPc
-    document.getElementById("cost2").innerHTML = cost2
+    register()
   } else {
     console.log("No..")
   }
