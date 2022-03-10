@@ -47,9 +47,8 @@ function getUpgrade2(){
 }
 
 window.setInterval(function(){
-	
-	energy += 1
-	
+    energy += 1	
+    document.getElementById("counter").innerHTML = energy
 }, 1000);
 
 //Hi
