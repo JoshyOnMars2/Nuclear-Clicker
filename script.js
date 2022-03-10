@@ -34,6 +34,12 @@ function getUpgrade(){
   }
 }
 
+window.setInterval(function(){
+	
+	energy += 1
+	
+}, 1000);
+
 function getUpgrade2(){
   if (energy >= cost2) {
     energyPc += 5
