@@ -4,7 +4,9 @@ body{
 }
 .button{
   border: none;
-  background-color: #85837e;
+  background-color: yellow;
+  height: 120px;
+  width: 120px;
 }
 .upgrade{
   background-color: #d9d9d9; /* Green */
