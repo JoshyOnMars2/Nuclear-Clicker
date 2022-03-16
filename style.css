@@ -1,13 +1,14 @@
 /* wow classy this is like to color and yeah uhh idrk.............. */
 body{
-  background-image: url('assets/putin.png');
+  /* background-image: url('assets/putin.png'); */
+  background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
 .button{
   border: none;
-  background-color: black;
+  background-color: white;
   height: 120px;
   width: 120px;
   border-radius: 50%;
